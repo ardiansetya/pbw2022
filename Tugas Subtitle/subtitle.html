@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button onclick="playVid()" type="button">Play</button>
+		<button onclick="pauseVid()" type="button">pause</button>
+		<button onclick="controlOn()" type="button">Control On</button>
+		<button onclick="controlOff()" type="button">Control Off</button>
+		<button onclick="duration()" type="button">Duration</button><br />
+
+		<center>
+			<video id="myVideo" autoplay width="1000" controls>
+				<source src="2.mp4" type="video/mp4" />
+				<source src="2.ogg" type="video/ogg" />
+				<track src="2.vtt" kind="subtitles" srclang="id" label="Indonesia" default />
+			</video>
+		</center>
+
+		<script>
+			var vid = document.getElementById("myVideo");
+
+			function playVid() {
+				vid.play();
+				vid.loop = true;
+			}
+
+			function pauseVid() {
+				vid.pause();
+			}
+
+			function controlOn() {
+				vid.controls = true;
+				vid.load();
+			}
+
+			function controlOff() {
+				vid.controls = false;
+				vid.load();
+			}
+
+			function duration() {
+				alert(vid.duration);
+			}
+		</script>
+	</body>
+</html>
