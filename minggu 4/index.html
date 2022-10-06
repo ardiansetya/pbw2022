@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form - HTML 5</h1>
+    <form name="fhms" method="post" action="1.php">
+    <table width="50%" border="3">
+        <tr>
+            <td>Email :</td>
+            <td><input type="email" name="femail"></td>
+        </tr>
+        <tr>
+                <td>password :</td>
+                <td><input type="password" name="fword"></td>
+            </tr>
+        <tr>
+            <td width= "30%">NIM :</td>
+            <td><input type="number" name="fnim" required><br></td>
+        </tr>
+        <tr>
+            <td>Nama :</td>
+            <td><input type="text" name="fnama" required><br></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir :</td>
+            <td><input type="date" name="ftgllhr" required></td>
+        </tr>
+        <tr>
+            <td>Program Studi :</td>
+            <td><select name="fprodi" id="" required><br>
+                <option value="11">Pilih</option><br>
+                <option value="12">Teknik Informatika - S1</option>
+                <option value="13">Sistem Informasi0 - S1</option>
+                <option value="">Teknik Informatika - D3</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Bidang Minat :</td>
+            <td><input value= "15"type="checkbox"><label for="" name="fminat1">Web Programming</label>
+                <input type="checkbox"><label for="" name="fminat2">Mobile Programming</label>
+                <input type="checkbox"><label for="" name="fminat3">Data Science</label></td>
+        </tr>
+        <tr>
+            <td>Lamp. Proposal :</td>
+            <td><input value="16" type="file" name="fproposal" required></td>
+        </tr>
+    </table>
+        <input type="submit" name="fsubmit">
+        <input type="reset" name="freset">
+    </form>
+    
+</body>
+</html>
