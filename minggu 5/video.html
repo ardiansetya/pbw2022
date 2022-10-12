@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video HTML</title>
+</head>
+<body>
+    <center>
+        <h1>HTML - Video Subtitle</h1>
+        <video id="myVideo" autoplay width="1000" controls>
+            <source src="assets/2.mp4" type="video/mp4" />
+            <source src="assets/2.mp4" type="video/ogg" />
+        </video><br /><br />
+        <button class="btn btn-primary" onclick="playVid()" type="button">Play</button>
+        <button class="btn btn-primary" onclick="pauseVid()" type="button">pause</button>
+        <button class="btn btn-primary" onclick="controlOn()" type="button">Control On</button>
+        <button class="btn btn-primary" onclick="controlOff()" type="button">Control Off</button>
+        <button class="btn btn-primary" onclick="duration()" type="button">Duration</button>
+    </center>
+    
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+            vid.loop = true;
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+
+        function controlOn() {
+            vid.controls = true;
+            vid.load();
+        }
+
+        function controlOff() {
+            vid.controls = false;
+            vid.load();
+        }
+
+        function duration() {
+            alert(vid.duration);
+        }
+    </script>
+</body>
+</html>
