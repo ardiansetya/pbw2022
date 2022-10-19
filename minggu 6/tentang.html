@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="cv-name.pdf">Download CV</a> |
+        <a href="kontak.html">Contact</a> |
+        <a href="tentang.html">About me</a>
+    </nav>
+
+    <hr />
+
+    <article>
+        <h1>Tentang Saya </h1>
+        <p>
+            Hi, saya adalah web developer.
+            Saat ini sedang belajar HTML.
+        </p>
+        <p>
+            Saya masih baru dalam web development, karena itu
+            saya tidak akan pernah berhenti belajar.
+        </p>
+        <p>
+            Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
+            Simak video lengkap tentang saya.
+        </p>
+        <p>
+            <video id="myVideo" width="1000" controls>
+                <source src="video/video-about.mp4" type="video/webm" style="width: 50%" />
+            </video>
+        </p>
+        <button class="btn btn-primary" onclick="playVid()" type="button">Play</button>
+        <button class="btn btn-primary" onclick="pauseVid()" type="button">pause</button>
+        <button class="btn btn-primary" onclick="controlOn()" type="button">Control On</button>
+        <button class="btn btn-primary" onclick="controlOff()" type="button">Control Off</button>
+        <button class="btn btn-primary" onclick="duration()" type="button">Duration</button>
+    </article>
+
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+            vid.loop = true;
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+
+        function controlOn() {
+            vid.controls = true;
+            vid.load();
+        }
+
+        function controlOff() {
+            vid.controls = false;
+            vid.load();
+        }
+
+        function duration() {
+            alert(vid.duration);
+        }
+    </script>
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2022 Ardian Setya Pradana.</p>
+    </footer>
+</body>
+
+</html>
