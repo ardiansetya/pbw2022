@@ -1,0 +1,50 @@
+*{
+    box-sizing:border-box;
+}
+
+header{
+    padding: 30px;
+    text-align: center;
+    border: 1px solid green;
+    background-color: #e5e5e5;
+}
+nav{
+    float: left;
+    width: 20%;
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid green;
+    background-color: #e5e5e5;
+    padding: 0;
+    margin-top: 0px;
+}
+nav ul li a{
+    display: block;
+    color: black;
+    padding: 8px,16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #555;
+    color: #fff
+}
+article{
+    float: left;
+    width: 20%;
+    border: 1px solid green;
+    background-color: #e5e5e5;
+    padding: 0, 20px;
+}
+footer{
+    text-align: center;
+}
+.satu{
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+}
+.dua{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color : blue;
+}

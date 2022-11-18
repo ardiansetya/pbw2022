@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripton" content="Latihan Semantik Element">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Semantic Layout">
+    <meta name="author" content="pw2022">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 1px solid blue;
+            padding: 25px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Judul Halaman / Header</h2>
+    </div>
+    <main class="row">
+        <nav class="col-12">
+            <ul>
+                <li>
+                    <a href="#"> menu 1</a>
+                </li>
+                <li>
+                    <a href="#"> menu 2</a>
+                </li>
+                <li>
+                    <a href="#"> menu 3</a>
+                </li>
+                <li>
+                    <a href="#"> menu 4</a>
+                </li>
+            </ul>
+        </nav>
+        <article class="col-12">
+                <h4>Judul Isi</h2>
+                    <p> <img src="../minggu 5/Desert.jpg" alt=""> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis. Neque unde soluta error nostrum
+                        cupiditate, veritatis dicta rerum aliquam sunt? Nulla maiores, numquam fugiat magnam ad nihil consectetur
+                        voluptatibus modi harum, quod ullam adipisci hic ea doloribus ducimus architecto?</p>
+            </article>
+    </main>
+
+
+        
+
+    
+    <footer class="col-12">Copyright
+        <i>&copy;</i>pbw2022</footer>
+
+    </div>
+</body>
+
+</html>
