@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+header {
+    display: grid;
+}
+
+/* .container-title{
+    float: left;
+}
+main{
+    
+} */
+body {
+    font-family: "Nunito-Sans", Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: right;
+    margin: 50px;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17d4fe;
+    font-size: 60px;
+    letter-spacing: 7px;
+}
+.imgh {
+    justify-self: end;
+    float: right;
+    width: 40rem;
+    height: 40rem;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 100px;
+}
+
+.jumbotron {
+    padding-left: 7rem;
+    padding-bottom: 10rem;
+}
+.gitar {
+    height: auto;
+}
+.produk {
+    background-color: #f7f7f7;
+}
+nav {
+    background-color: #f7f7f7;
+}
+.container-title {
+    padding-top: 15rem;
+    margin-right: 5rem;
+    float: left;
+    overflow: auto;
+}
+.login {
+    width: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.login-button {
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.produk .portfolio-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+.card .card-body:hover img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+.card .card-body .card-title {
+    font-weight: 500;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+.button {
+    background: linear-gradient(to bottom right, coral, #ff9a5a);
+    border: 0;
+    border-radius: 12px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+        sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.button:not([disabled]):focus {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+        -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+        0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button:not([disabled]):hover {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+        -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+        0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+@media (max-width: 1235px) {
+    header {
+        display: grid;
+    }
+
+    .title {
+        padding-top: 10rem;
+        float: left;
+    }
+    .jumbotron {
+        padding-left: 2rem;
+    }
+    .container-title {
+        padding-top: 5rem;
+    }
+    .imgh {
+        margin-top: 2rem;
+        width: 100%;
+        height: 25rem;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        display: grid;
+    }
+    .container-title {
+        margin-left: 10rem;
+        padding-top: 10rem;
+        float: left;
+    }
+    .jumbotron {
+        padding-left: 2rem;
+        text-align: center;
+    }
+    .imgh {
+        
+        margin-top: 2rem;
+        width: 40rem;
+        height: 25rem;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+}
+@media (max-width: 400px) {
+    .header {
+        display: inline;
+    }
+    .title {
+        padding-top: 10rem;
+        float: left;
+    }
+    .jumbotron {
+        padding-left: 2rem;
+    }
+    .container-title {
+        margin-left: 4rem;
+        padding-top: 5rem;
+    }
+    .imgh {
+        justify-self: center;
+        margin-top: 2rem;
+        width: 25rem;
+        height: 25rem;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+}

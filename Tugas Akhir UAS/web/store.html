@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop | Store</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="store.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!--navbar start-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-md">
+            <div class="container">
+                <img src="assets/icon.png" alt="">
+                <a class="navbar-brand" href="index.html"><span class="fw-bold fs-4">Rhythm</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Model
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#sg">SG</a></li>
+                                <li><a class="dropdown-item" href="#es">ES</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-4" href="#collection">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-4" href="#support">Support</a>
+                        </li>
+                        <li class="nav-item ms-5">
+                            <a href="login.html"><button class="login-button"><img class="login" src="assets/user.png" alt="">Login</button>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-5">
+                            <div class="container">
+                                <i class='bx bx-cart' id="cart-icon"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--navbar end-->
+        <!-- cart -->
+        <div class="cart">
+            <h2 class="cart-title">Cart</h2>
+            <hr>
+            <!-- pesanan -->
+            <div class="cart-content">
+                
+            </div>
+            <!-- total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- buy button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- cart close -->
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+        <!-- cart end -->
+    </header>
+    <!-- header end -->
+
+    <!-- shop start -->
+
+    <section class="shop container">
+
+        <h2 class="section-tittle">Guitar Collections</h2>
+        <!-- content -->
+        <div class="tinggi" id="sg"></div>
+        <h2 class="section-subtittle">SG Model</h2>
+
+        <!-- Content -->
+        <main class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="assets/gibson1.png" alt="" class="product-img">
+                <h2 class="product-title">SG Standard '61 Faded Maestro - Vintage Cherry</h2>
+                <span class="price">Rp. 29000000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box"> <img src="assets/gibson2.png" alt="" class="product-img">
+                <h2 class="product-title">SG Standard '61 Faded Maestro Vibrola - Vintage Cherry</h2>
+                <span class="price">Rp. 15750000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box"> <img src="assets/gibson3.png" alt="" class="product-img">
+                <h2 class="product-title">SG Standard '61 Sideways Vibrola - Vintage Cherry</h2>
+                <span class="price">Rp. 17000000</span> <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box"> <img src="assets/gibson4.png" alt="" class="product-img">
+                <h2 class="product-title">SG Standard Bass - Heritage Cherry</h2>
+                <span class="price">Rp. 25500000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </main>
+
+        <div class="tinggi" id="es"></div>
+        <h2 class="section-subtittle">ES Model</h2>
+        <main class="shop-content">
+            <!-- Box 5 -->
+            <div class="product-box"> 
+                <img src="assets/gibson5.png" alt="" class="product-img">
+                <h2 class="product-title">ES-335 - Vintage Burst</h2>
+                <span class="price">Rp. 22000000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box"> 
+                <img src="assets/gibson6.png" alt="" class="product-img">
+                <h2 class="product-title">ES-335 Figured - Iced Tea</h2>
+                <span class="price">Rp. 31300000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box"> <img src="assets/gibson7.png" alt="" class="product-img">
+                <h2 class="product-title">1964 Trini Lopez Standard Reissue - Ebony</h2>
+                <span class="price">Rp. 35500000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box"> <img src="assets/gibson8.png" alt="" class="product-img">
+                <h2 class="product-title">ES-339 Figured - Sixties Cherry</h2>
+                <span class="price">Rp. 29500000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </main>
+    </section>
+    <!-- shop end -->
+    <!-- footer -->
+    <footer class="footer bg-li-ght p-3">
+        <div class="container">
+            <div class="row text-dark">
+                <div class="col-6 text-lg-start text-sm-start">
+                    Copyright © 2022 Rhythm. All Rights Reserved
+                </div>
+                <div class="col-6 text-lg-end text-sm-end">
+                    Privacy Policy Terms & Condition
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
